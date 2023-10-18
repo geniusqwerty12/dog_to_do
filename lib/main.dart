@@ -1,4 +1,3 @@
-import 'package:dog_to_do/widgets/layouts.dart';
 import 'package:dog_to_do/widgets/statefulSample1.dart';
 import 'package:dog_to_do/widgets/statelessSample.dart';
 import 'package:flutter/material.dart';
