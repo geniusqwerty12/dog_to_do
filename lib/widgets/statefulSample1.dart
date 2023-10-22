@@ -8,6 +8,9 @@ class StatefulSample1 extends StatefulWidget {
 }
 
 class _StatefulSample1State extends State<StatefulSample1> {
+  // This is the variable that is displayed
+  // and needs to be updated
+  // when the user clicks the button
   String message = "Hello world";
 
   @override
@@ -42,8 +45,10 @@ class _StatefulSample1State extends State<StatefulSample1> {
             Text("Message: $message"),
             ElevatedButton(
               onPressed: () {
-                print("Nice try");
+                // update the value
                 message = "New message";
+                // this line rerenders the widget
+                // redraw the widget visual
                 setState(() {});
               },
               child: Text("Click me to change the text above?"),

@@ -34,6 +34,7 @@ class StatelessSample extends StatelessWidget {
               width: 200,
               height: 200,
             ),
+            // Display the message here
             Text("Message: $message"),
             ElevatedButton(
               onPressed: () {

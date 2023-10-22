@@ -48,12 +48,47 @@ class _StatefulSample2State extends State<StatefulSample2> {
           children: [
             whatDogDo(dogAction),
             Text("Master left the house, what will you do?"),
+            SizedBox(
+              height: 50,
+            ),
             ElevatedButton(
               onPressed: () {
-                print("Nice try");
-                // setState(() {});
+                setState(() {
+                  dogAction = "good-boy";
+                });
               },
-              child: Text("Click me to change the text above?"),
+              child: Text("Be a good boy!"),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                dogAction = "eat-couch";
+                setState(() {});
+              },
+              child: Text("Say good bye to the couch!"),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  dogAction = "bring-friend";
+                });
+              },
+              child: Text("Find Sebastian and bring him home."),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                dogAction = "dog-wait";
+                setState(() {});
+              },
+              child: Text("Stand and wait for master to return."),
             ),
           ],
         ));
